@@ -1,0 +1,500 @@
+:root{
+    --cor0: #306EBF;
+    --cor1: #759CBF;
+    --cor2: #306EBF;
+    --cor3: #5A758C;
+    --cor4: #02476F;
+    --cor5: #F2CEAE;
+}
+
+body{
+    background-color: white;
+}
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-list li {
+    margin: 10px 0;
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .nav-list a:hover {
+    color: #ff9800;
+  }
+  
+  .menu-container {
+    display: none; /* Esconde o menu em dispositivos móveis */
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+  }
+  
+  .menu-container.active {
+    display: block; /* Exibe o menu quando a classe 'active' é adicionada */
+  }
+  
+  /* Estilo do botão toggle */
+  .menu-toggle {
+    display: none; /* Esconde em telas maiores */
+    cursor: pointer;
+  }
+  
+  /* Estilo do ícone */
+  .menu-toggle .material-icons {
+    font-size: 30px;
+    color: white;
+  }
+  
+  /* Responsivo */
+@media screen and (max-width: 700px) {
+    .menu-toggle {
+    display: block;
+    }
+
+    .nav-list {
+      display: block; /* Ajusta a lista para ser vertical em telas menores */
+    padding-left: 20px;
+    }
+}
+
+nav {
+    background-color: rgb(255, 255, 255);
+    height: 101px;
+    margin: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+nav > a {
+    color: rgb(0, 0, 0);
+    margin: 15px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+nav > a:hover {
+    border: 2px solid black;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+haeder > .imagem {
+    background-color: #508ccc6b;
+}
+
+main > .contato {
+    background-color: #306EBF;
+    color: white;
+    padding: 80px;
+    margin: -10px -10px 30px;
+    display: flex; /* Ativa o flexbox */
+    flex-direction: column; /* Organiza elementos lado a lado */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    gap: 10px; /* Espaço entre input e botão */
+}
+
+.contato > h1 {
+    text-align: center;/* Ocupa a largura completa */
+}
+
+.contato > input {
+    padding: 15px;
+    width: 300px; /* Define um tamanho fixo ou ajustável */
+    text-align: center;
+}
+
+.contato > button {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    transition: 0.3s;
+    width: 330px;
+}
+
+.contato > button:hover {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+.container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-wrap: wrap; /* Permite que as listas fiquem em linhas caso falte espaço */
+    gap: 20px; /* Espaço entre as listas */
+    padding: 20px;
+    
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Ajustar menu */
+        height: auto;
+    }
+
+    nav > a {
+        margin: 10px 0;
+    }
+
+    main > .contato {
+        padding: 20px;
+    }
+
+    .contato > input,
+    .contato > button {
+        font-size: 14px; /* Ajustar tamanhos */
+    }
+
+    .img-header{
+        width: 535px;
+        height: 500px;
+        align-items: center;
+    }
+
+}
+
+
+main > .info-main {
+    background-color: var(--cor4);
+    padding: 45px;
+    margin: -10px -10px;
+}
+
+.info-main > h1,
+h3 {
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-wrap: wrap; /* Permite quebrar para a próxima linha */
+    gap: 30px; /* Espaço entre as listas */
+    padding: 68px; /* Cor de fundo opcional */
+}
+
+.list-main {
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+    align-items: center; /* Alinha o conteúdo no centro */
+    justify-content: center; /* Centraliza o texto verticalmente */
+    min-height: 200px; /* Altura mínima para todas as listas */
+    padding: 20px;
+    background-color: white; /* Cor de fundo das listas */
+    border: 2px solid var(--cor0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    text-align: center; /* Centraliza o texto */
+    
+}
+
+.text-main {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--cor0); /* Cor do texto */
+    margin-bottom: 10px;
+}
+
+.list-main p {
+    font-size: 14px;
+    color: var(--cor3); /* Cor do parágrafo */
+    transition: 0.9s;
+}
+
+.list-main:hover {
+    background-color: #02476F;
+    border-radius: 10px;
+    color: white;
+    margin-top: 5px;
+    transition: 0.5s;
+}
+
+.list-main:hover > p{
+    color: white;
+}
+
+.list-main:hover > h4{
+    color: white;
+}
+
+/* Responsividade */
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column; /* Empilha os elementos */
+        align-items: center;  
+        margin: 100px; 
+        padding: 50px;
+        width: 300px;
+    }
+
+    .list-main {
+        display: flex;
+        flex-direction: column; /* Coloca os itens um embaixo do outro */
+        align-items: center;
+
+    }
+
+    .container-main3 {
+        display: flex;
+        flex-direction: column; /* Empilha */
+        gap: 20px;
+        align-items: center;
+    }
+
+    .container-main3 > .exp-main,
+    .container-main3 > .exp-main-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .container-main3 > .exp-main > img,
+    .container-main3 > .exp-main-left > img,
+    .img-header {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        margin: 0 auto;
+        
+    }
+}
+
+
+.button-main{
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-wrap: wrap; /* Permite que as listas fiquem em linhas caso falte espaço */
+    gap: 20px; /* Espaço entre as listas */
+    padding: 30px;
+}
+.button-main > button{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    transition: 0.3s;
+    width: 330px;
+}
+
+button:hover{
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+
+.exp-main {
+    display: flex; /* Organiza os elementos em linha */
+    flex-direction: row; /* Mantém texto e imagem lado a lado */
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: space-between; /* Cria espaço entre texto e imagem */
+    width: 100%; /* Garante que ocupe toda a largura */
+    gap: 20px; /* Espaçamento entre o texto e a imagem */
+    padding: 20px;
+    background-color: white; /* Cor de fundo das listas */
+    text-align: left; /* Alinha o texto à esquerda */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+.exp-main img {
+    width: 640px; /* Ajusta o tamanho da imagem */
+    height: 449px; /* Mantém a proporção */
+    border-radius: 10px; /* Bordas arredondadas (opcional) */
+}
+
+.exp-main-left img {
+    width: 640px; /* Ajusta o tamanho da imagem */
+    height: 449px; /* Mantém a proporção */
+    border-radius: 10px; /* Bordas arredondadas (opcional) */
+}
+.exp-main-left {
+    display: flex; /* Organiza os elementos em linha */
+    flex-direction: row-reverse; /* Mantém texto e imagem lado a lado */
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: space-between; /* Cria espaço entre texto e imagem */
+    width: 100%; /* Garante que ocupe toda a largura */
+    gap: 20px; /* Espaçamento entre o texto e a imagem */
+    padding: 20px;
+    background-color: white; /* Cor de fundo das listas */
+    text-align: left; /* Alinha o texto à esquerda */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+.container-main2{
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar para a próxima linha */
+    gap: 30px; /* Espaço entre as listas */
+    margin-left: -131px;
+}
+
+.container-main3{
+    display: flex;
+    gap: 30px; /* Espaço entre as listas */
+    padding: 20px; /* Cor de fundo opcional */
+}
+
+.container-main4{
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar para a próxima linha */
+    gap: 30px; /* Espaço entre as listas */
+    padding: 20px; /* Cor de fundo opcional */
+}
+
+.info-main2{
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+:root {
+    --cor-primaria: #306EBF;
+    --cor-texto-claro: #fff;
+    --cor-texto-escuro: #333;
+    --cor-hover: #ff9800;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: var(--cor-primaria);
+    width: 100%;
+}
+
+.img-header {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    /* Removido position: fixed */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+}
+
+.nav-list {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-list li a {
+    color: var(--cor-texto-claro);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.nav-list li a:hover {
+    background-color: var(--cor-hover);
+    color: var(--cor-texto-escuro);
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    color: var(--cor-texto-claro);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .logo img {
+        width: 40px;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.container img:hover {
+    transform: scale(1.05);
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
